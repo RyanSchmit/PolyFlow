@@ -1,16 +1,29 @@
-import './NavBar.css'; 
+import { Outlet, Link } from "react-router-dom";
+import '../components/NavBar.css'
 
-const NavBar = () => {
+const Layout = () => {
   return (
-    <div className="navbar">
-      <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/planner">Planner</a></li>
-        <li><a href="/stats">Stats</a></li>
-        <li><a href="/discover">Discover</a></li>
-      </ul>
-    </div>
-  );
-}
+    <>
+      <nav className="navbar">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/planner">Planner</Link>
+          </li>
+          <li>
+            <Link to="/stats">Stats</Link>
+          </li>
+          <li>
+            <Link to="/discover">Discover</Link>
+          </li>
+        </ul>
+      </nav>
 
-export default NavBar;
+      <Outlet />
+    </>
+  );
+};
+
+export default Layout;
