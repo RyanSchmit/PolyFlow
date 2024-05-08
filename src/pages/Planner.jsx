@@ -1,5 +1,11 @@
+import Table from "../components/Table";
+
 const Planner = () => {
-  return <h1>Planner</h1>;
+  return (
+    <>
+      <Table />
+    </>
+  );
 };
 
 export default Planner;
