@@ -1,10 +1,10 @@
-import Table from "../components/Table";
+import BoardExample from "../components/Table";
 
 const Planner = () => {
   return (
-    <>
-      <Table />
-    </>
+    <div>
+      <BoardExample />
+    </div>
   );
 };
 

@@ -1,17 +1,6 @@
-table {
+.table {
   cursor: pointer;
   border: 3px solid grey;
   padding: 20px;
   margin-left: 200px;
-}
-
-th,
-td {
-  border: 7px solid black;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: 40px;
 }
