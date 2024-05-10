@@ -1,9 +1,10 @@
 import BoardExample from "../components/Table";
+import Drag from "../components/Drag";
 
 const Planner = () => {
   return (
     <div>
-      <BoardExample />
+      <Drag />
     </div>
   );
 };
